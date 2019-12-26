@@ -22,7 +22,7 @@ export const Card = styled.View`
   position: absolute;
   left: 0;
   right: 0;
-  top: 380px;
+  top: 0;
 `;
 
 export const CardHeader = styled.View`
@@ -54,7 +54,7 @@ export const CardSaldo = styled.View`
   background: #eee;
   border-radius: 4px;
 `;
-
+  
 export const Annotation = styled.Text`
   font-size: 13px;
   color: #333;

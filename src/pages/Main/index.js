@@ -2,20 +2,21 @@ import React, { Component } from 'react';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
+import { Animated } from 'react-native';
+import { PanGestureHandler, State } from 'react-native-gesture-handler';
+
 import Header from '~/components/Header';
 import Tabs from '~/components/Tabs';
 import Menu from '~/components/Menu';
 
 import { Container, Content, Card, CardHeader, CardContent, CardSaldo, Title, Description, Annotation } from './styles';
 
-export default class Main extends Component {
-  render() {
-    return (
+export default function Main() {
+  return(
     <Container>
       <Header />
       <Content>
         <Menu />
-        
       <Card>
       <CardHeader>
         <Icon name="attach-money" size={28} color="#666" />
@@ -36,5 +37,3 @@ export default class Main extends Component {
       </Container>
   );
 }
-}
-
